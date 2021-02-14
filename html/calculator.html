@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator</title>
+	
+	<link rel="stylesheet" href="G:/All projects/project_calculator/css/calculator.css">
+
+	<script>
+	result=0;
+	var1="";
+	var2="";
+	opr="";
+	function one(){
+		if (var1==""){
+			var1=1;
+			document.getElementById("display").innerHTML=var1;
+		}
+		else{
+			var2=1;
+			document.getElementById("display").innerHTML=var2;
+		}
+	}
+	function two(){
+		if (var1==""){
+			var1=2;
+			document.getElementById("display").innerHTML=var1;
+		}
+		else{
+			var2=2;
+			document.getElementById("display").innerHTML=var2;
+		}
+	}
+	function three(){
+		if (var1==""){
+			var1=3;
+			document.getElementById("display").innerHTML=var1;
+		}
+		else{
+			var2=3;
+			document.getElementById("display").innerHTML=var2;
+		}
+	}
+	function four(){
+		if (var1==""){
+			var1=4;
+			document.getElementById("display").innerHTML=var1;
+		}
+		else{
+			var2=4;
+			document.getElementById("display").innerHTML=var2;
+		}
+	}
+	function five(){
+		if (var1==""){
+			var1=5;
+			document.getElementById("display").innerHTML=var1;
+		}
+		else{
+			var2=5;
+			document.getElementById("display").innerHTML=var2;
+		}
+	}
+	function six(){
+		if (var1==""){
+			var1=6;
+			document.getElementById("display").innerHTML=var1;
+		}
+		else{
+			var2=6;
+			document.getElementById("display").innerHTML=var2;
+		}
+	}
+	function seven(){
+		if (var1==""){
+			var1=7;
+			document.getElementById("display").innerHTML=var1;
+		}
+		else{
+			var2=7;
+			document.getElementById("display").innerHTML=var2;
+		}
+	}
+	function eight(){
+		if (var1==""){
+			var1=8;
+			document.getElementById("display").innerHTML=var1;
+		}
+		else{
+			var2=8;
+			document.getElementById("display").innerHTML=var2;
+		}
+	}
+	function nine(){
+		if (var1==""){
+			var1=9;
+			document.getElementById("display").innerHTML=var1;
+		}
+		else{
+			var2=9;
+			document.getElementById("display").innerHTML=var2;
+		}
+	}
+	function zero(){
+		if (var1==""){
+			var1=0;
+			document.getElementById("display").innerHTML=var1;
+		}
+		else{
+			var2=0;
+			document.getElementById("display").innerHTML=var2;
+		}
+	}
+	function add(){
+		opr="+";
+		document.getElementById("display").innerHTML=opr;
+	}
+	function sub(){
+		opr="-";
+		document.getElementById("display").innerHTML=opr;
+	}
+	function mul(){
+		opr="*";
+		document.getElementById("display").innerHTML=opr;
+	}
+	function div(){
+		opr="/";
+		document.getElementById("display").innerHTML=opr;
+	}
+	function mod(){
+		opr="%";
+		document.getElementById("display").innerHTML=opr;
+	}
+	function ac(){
+		result=0;
+		var1="";
+		var2="";
+		opr="";
+		document.getElementById("display").innerHTML="Let's calculate!!!";
+	}
+	function del(){
+		if (var1!=""){
+			var1="";
+			document.getElementById("display").innerHTML=0;
+		}
+		else{
+			var2="";
+			document.getElementById("display").innerHTML=0;
+		}
+	}
+	function res(){
+		if (opr=="+"){
+			document.getElementById("display").innerHTML=var1+var2;
+		}
+		if (opr=="-"){
+			document.getElementById("display").innerHTML=var1-var2;
+		}
+		if (opr=="*"){
+			document.getElementById("display").innerHTML=var1*var2;
+		}
+		if (opr=="/" || opr=="%"){
+			if (var1==0){
+			document.getElementById("display").innerHTML = "MathError!!!";
+			alert("Division by zero error!!!");
+				}
+			else if (opr=="/"){
+				document.getElementById("display").innerHTML=var1/var2;
+			}
+			else{
+				document.getElementById("display").innerHTML=var1%var2;
+			}
+		}
+
+		result=0;
+		var1="";
+		var2="";
+		opr="";
+	}
+	</script>
+
+</head>
+<body>
+	<div class="main">
+		<div class="display">
+			<p id="display">0</p>
+		</div>
+		
+		<button type="button" onclick="ac()"><b>AC</b></button>
+	    <button type="button" onclick="del()"><b>DE</b></button>
+
+		<button type="button" onclick="one()"><b>1</b></button>
+	    <button type="button" onclick="two()"><b>2</b></button>
+	    <button type="button" onclick="three()"><b>3</b></button>
+	    <button type="button" onclick="four()"><b>4</b></button>
+	    <button type="button" onclick="five()"><b>5</b></button>
+	  	<button type="button" onclick="six()"><b>6</b></button>
+	    <button type="button" onclick="seven()"><b>7</b></button>
+	    <button type="button" onclick="eight()"><b>8</b></button>
+	    <button type="button" onclick="nine()"><b>9</b></button>
+	    <button type="button" onclick="zero()"><b>0</b></button>
+
+	    <button type="button" onclick="add()"><b>+</b></button>
+	    <button type="button" onclick="sub()"><b>-</b></button>
+	    <button type="button" onclick="mul()"><b>*</b></button>
+	    <button type="button" onclick="div()"><b>/</b></button>
+	    <button type="button" onclick="mod()"><b>%</b></button>
+	    <button type="button" onclick="res()"><b>=</b></button>
+
+	</div>
+
+</body>
+</html>

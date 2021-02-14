@@ -1,0 +1,24 @@
+>>>Calculation algorithm:
+
+#way-01:
+1)insert first operand
+2)insert second operand
+3)insert operator
+4)click submit or equal button
+
+#way-02:
+1)insert first operand
+2)insert operator
+3)insert second operand
+4)click submit or equal button
+
+
+>>>Others:
+
+#change the inserted operand
+1)click the DE button
+2)insert the updated operand
+
+#start from the beginning
+1)click the AC button
+2)Follow the calculation algorithm
